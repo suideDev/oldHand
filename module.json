@@ -1,0 +1,34 @@
+{
+    "id": "grasping-hand",
+    "title": "Grasping Hand",
+    "description": "An old hand reaches into the Carousel Combat Tracker, grabs a combatant's card and drags it to the front of the initiative order.",
+    "version": "2.0.0",
+    "url": "https://github.com/suideDev/oldHand",
+    "manifest": "https://github.com/suideDev/oldHand/releases/latest/download/module.json",
+    "download": "https://github.com/suideDev/oldHand/releases/download/v2.0.0/module.zip",
+    "authors": [
+        {
+            "name": "Dungeon Master"
+        }
+    ],
+    "compatibility": {
+        "minimum": "12",
+        "verified": "14"
+    },
+    "esmodules": [
+        "scripts/main.js"
+    ],
+    "styles": [
+        "styles/grasping-hand.css"
+    ],
+    "socket": true,
+    "relationships": {
+        "recommends": [
+            {
+                "id": "combat-tracker-dock",
+                "type": "module",
+                "reason": "The hand animation plays on the Carousel Combat Tracker. Without it, the initiative change still happens but nobody sees the hand."
+            }
+        ]
+    }
+}
